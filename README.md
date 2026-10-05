@@ -59,7 +59,6 @@ The goal is to make mathematical processing **text-driven and extensible**.
 * 🗂️ Uses operation mapping instead of operation-specific `if/elif` chains
 * 🧮 Generates mathematical expressions dynamically
 * ⚡ Evaluates generated expressions using Python
-* 🗄️ Uses MySQL to store operation-related information
 * 🌐 Provides a Streamlit-based interface
 * ❌ Handles unsupported mathematical inputs
 * 🔄 Supports both single-value and multi-value operations
