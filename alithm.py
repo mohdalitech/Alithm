@@ -30,14 +30,14 @@ if(st.button("Send",type="primary")):
             break
     if(isError):
         st.write_stream(
-                    time.sleep(0.05) or char for char in """Looks like your question is not of the types supprted..
-                        Kindly provide the direct question like 7 + 3 
-                        instead of what is 7 + 3 ?\n
-                        Supported operations are:\n
-                        1.Addition\n
-                        2.Substraction\n
-                        3.Multiplication\n
-                        4.Division\n
-                        5.Sqaure and square root\n
-                        6.Cube and cube root""")
+                    time.sleep(0.05) or char for char in """Your question is not of the types supprted..
+                        Kindly choose your question from one of these types:
+                        \n1. Addition
+                        \n2. Subtraction
+                        \n3. Multiplication
+                        \n4. Division
+                        \n5. Square and square root
+                        \n6. Cube and cube root
+                        """
+                    )
 
