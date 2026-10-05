@@ -17,7 +17,7 @@ math_input=st.text_input("Enter your question to solve :")
 isError=True
 if(st.button("Send",type="primary")):
     for operator in sorted(arithmetic,key=len,reverse=True): #getting all keys{operators} of arithmatic
-        if operator in math_input: #checking if the operator exists in user's query
+        if operator in math_input.lower(): #checking if the operator exists in user's query
             isError=False
             numbers=re.findall(r"\d+(?:\.\d+)?",math_input) #finding all numbers from input
             expr=arithmetic[operator] #getting the value{expression} for operators
